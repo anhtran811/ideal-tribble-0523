@@ -20,3 +20,13 @@ jurassic_world = universal.movies.create!(title: 'Jurassic World Dominion', crea
 
 venom = sony.movies.create!(title: 'Venom', creation_year: '2020', genre: 'action')
 spider_man = sony.movies.create!(title: 'Spider Man No Way Home', creation_year: '2021', genre: 'action')
+
+tom = Actor.create!(name: 'Tom Holland', age: 26)
+zendaya = Actor.create!(name: 'Zendaya', age: 27)
+marisa = Actor.create!(name: 'Marisa Tomei', age: 58)
+tobey = Actor.create!(name: 'Tobey Maguire', age: 47)
+
+MovieActor.create!(movie_id: spider_man.id, actor_id: tom.id)
+MovieActor.create!(movie_id: spider_man.id, actor_id: zendaya.id)
+MovieActor.create!(movie_id: spider_man.id, actor_id: marisa.id)
+MovieActor.create!(movie_id: spider_man.id, actor_id: tobey.id)
