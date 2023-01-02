@@ -25,6 +25,7 @@ tom = Actor.create!(name: 'Tom Holland', age: 26)
 zendaya = Actor.create!(name: 'Zendaya', age: 27)
 marisa = Actor.create!(name: 'Marisa Tomei', age: 58)
 tobey = Actor.create!(name: 'Tobey Maguire', age: 47)
+andrew = Actor.create!(name: 'Andrew Garfield', age: 39) 
 
 MovieActor.create!(movie_id: spider_man.id, actor_id: tom.id)
 MovieActor.create!(movie_id: spider_man.id, actor_id: zendaya.id)
