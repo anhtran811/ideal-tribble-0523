@@ -7,6 +7,10 @@ RSpec.describe Actor, type: :model do
     it { should have_many(:studios).through(:movies) }
   end
 
+  describe 'validations' do
+    it { should validate_uniqueness_of(:name) }
+  end
+
   describe '#age_sorted' do
     it 'can sort the actors in order of age' do
       sony = Studio.create!(name: 'Sony', location: 'Los Angeles')
